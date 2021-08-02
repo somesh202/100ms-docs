@@ -1,0 +1,193 @@
+---
+title: HMSUpdateListener
+nav: 35
+---
+
+Interfaces
+
+## Hierarchy
+
+- `DeviceChangeListener`
+  ↳ **`HMSUpdateListener`**
+
+## Methods
+
+### onDeviceChange
+
+▸ **onDeviceChange**(`deviceMap`): `void`
+
+#### Parameters
+
+| Name | Type |
+| :--- | :--- |
+
+#### Returns
+
+`void`
+
+#### Inherited from
+
+DeviceChangeListener.onDeviceChange
+
+---
+
+### onError
+
+▸ **onError**(`error`): `void`
+
+#### Parameters
+
+| Name    | Type                                                            |
+| :------ | :-------------------------------------------------------------- |
+| `error` | [`HMSException`](/v2/api-reference/web/interfaces/HMSException) |
+
+#### Returns
+
+`void`
+
+---
+
+### onJoin
+
+▸ **onJoin**(`room`): `void`
+
+#### Parameters
+
+| Name   | Type                                                  |
+| :----- | :---------------------------------------------------- |
+| `room` | [`HMSRoom`](/v2/api-reference/web/interfaces/HMSRoom) |
+
+#### Returns
+
+`void`
+
+---
+
+### onMessageReceived
+
+▸ **onMessageReceived**(`message`): `void`
+
+#### Parameters
+
+| Name      | Type                                                        |
+| :-------- | :---------------------------------------------------------- |
+| `message` | [`HMSMessage`](/v2/api-reference/web/interfaces/HMSMessage) |
+
+#### Returns
+
+`void`
+
+---
+
+### onPeerUpdate
+
+▸ **onPeerUpdate**(`type`, `peer`): `void`
+
+#### Parameters
+
+| Name   | Type                                                         |
+| :----- | :----------------------------------------------------------- |
+| `type` | [`HMSPeerUpdate`](/v2/api-reference/web/enums/HMSPeerUpdate) |
+| `peer` | `null` \| [`HMSPeer`](/v2/api-reference/web/classes/HMSPeer) |
+
+#### Returns
+
+`void`
+
+---
+
+### onReconnected
+
+▸ **onReconnected**(): `void`
+
+#### Returns
+
+`void`
+
+---
+
+### onReconnecting
+
+▸ **onReconnecting**(`error`): `void`
+
+#### Parameters
+
+| Name    | Type                                                            |
+| :------ | :-------------------------------------------------------------- |
+| `error` | [`HMSException`](/v2/api-reference/web/interfaces/HMSException) |
+
+#### Returns
+
+`void`
+
+---
+
+### onRoleChangeRequest
+
+▸ **onRoleChangeRequest**(`request`): `void`
+
+#### Parameters
+
+| Name      | Type                                                                            |
+| :-------- | :------------------------------------------------------------------------------ |
+| `request` | [`HMSRoleChangeRequest`](/v2/api-reference/web/interfaces/HMSRoleChangeRequest) |
+
+#### Returns
+
+`void`
+
+---
+
+### onRoleUpdate
+
+▸ **onRoleUpdate**(`newRole`): `void`
+
+#### Parameters
+
+| Name      | Type     |
+| :-------- | :------- |
+| `newRole` | `string` |
+
+#### Returns
+
+`void`
+
+---
+
+### onRoomUpdate
+
+▸ **onRoomUpdate**(`type`, `room`): `void`
+
+#### Parameters
+
+| Name   | Type                                                         |
+| :----- | :----------------------------------------------------------- |
+| `type` | [`HMSRoomUpdate`](/v2/api-reference/web/enums/HMSRoomUpdate) |
+| `room` | [`HMSRoom`](/v2/api-reference/web/interfaces/HMSRoom)        |
+
+#### Returns
+
+`void`
+
+---
+
+### onTrackUpdate
+
+▸ **onTrackUpdate**(`type`, `track`, `peer`): `void`
+
+#### Parameters
+
+| Name    | Type                                                           |
+| :------ | :------------------------------------------------------------- |
+| `type`  | [`HMSTrackUpdate`](/v2/api-reference/web/enums/HMSTrackUpdate) |
+| `track` | [`HMSTrack`](/v2/api-reference/web/classes/HMSTrack)           |
+| `peer`  | [`HMSPeer`](/v2/api-reference/web/classes/HMSPeer)             |
+
+#### Returns
+
+`void`
+es/HMSPeer) |
+
+#### Returns
+
+`void`

@@ -1,0 +1,60 @@
+---
+title: HMSTrackSettings
+nav: 12
+---
+
+Simulcast Layers and Track Settings
+
+## Implements
+
+- `IAnalyticsPropertiesProvider`
+
+## Constructors
+
+### constructor
+
+• **new HMSTrackSettings**(`video`, `audio`, `simulcast`)
+
+#### Parameters
+
+| Name        | Type                                                                                     |
+| :---------- | :--------------------------------------------------------------------------------------- |
+| `video`     | `null` \| [`HMSVideoTrackSettings`](/v2/api-reference/web/classes/HMSVideoTrackSettings) |
+| `audio`     | `null` \| [`HMSAudioTrackSettings`](/v2/api-reference/web/classes/HMSAudioTrackSettings) |
+| `simulcast` | `boolean`                                                                                |
+
+## Properties
+
+### audio
+
+• `Readonly` **audio**: `null` \| [`HMSAudioTrackSettings`](/v2/api-reference/web/classes/HMSAudioTrackSettings)
+
+---
+
+### simulcast
+
+• `Readonly` **simulcast**: `boolean`
+
+---
+
+### video
+
+• `Readonly` **video**: `null` \| [`HMSVideoTrackSettings`](/v2/api-reference/web/classes/HMSVideoTrackSettings)
+
+## Methods
+
+### toAnalyticsProperties
+
+▸ **toAnalyticsProperties**(): `Object`
+
+#### Returns
+
+`Object`
+| Name | Type |
+| :------ | :------ |
+| `audio_enabled` | `boolean` |
+| `video_enabled` | `boolean` |
+
+#### Implementation of
+
+IAnalyticsPropertiesProvider.toAnalyticsProperties

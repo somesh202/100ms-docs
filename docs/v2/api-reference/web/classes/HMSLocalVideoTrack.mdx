@@ -1,0 +1,218 @@
+---
+title: HMSLocalVideoTrack
+nav: 5
+---
+
+Tracks
+
+## Hierarchy
+
+- [`HMSVideoTrack`](/v2/api-reference/web/classes/HMSVideoTrack)
+  ↳ **`HMSLocalVideoTrack`**
+
+## Constructors
+
+### constructor
+
+• **new HMSLocalVideoTrack**(`stream`, `track`, `source`, `settings?`)
+
+#### Parameters
+
+| Name       | Type                                                                           |
+| :--------- | :----------------------------------------------------------------------------- |
+| `stream`   | `default`                                                                      |
+| `track`    | `MediaStreamTrack`                                                             |
+| `source`   | `string`                                                                       |
+| `settings` | [`HMSVideoTrackSettings`](/v2/api-reference/web/classes/HMSVideoTrackSettings) |
+
+#### Overrides
+
+## Properties
+
+### settings
+
+• **settings**: [`HMSVideoTrackSettings`](/v2/api-reference/web/classes/HMSVideoTrackSettings)
+
+---
+
+### source
+
+#### Inherited from
+
+---
+
+### type
+
+• `Readonly` **type**: [`HMSTrackType`](/v2/api-reference/web/enums/HMSTrackType)
+
+#### Inherited from
+
+## Accessors
+
+### enabled
+
+• `get` **enabled**(): `boolean`
+
+#### Returns
+
+`boolean`
+
+---
+
+### trackId
+
+• `get` **trackId**(): `string`
+
+#### Returns
+
+`string`
+
+## Methods
+
+### addPlugin
+
+▸ **addPlugin**(`plugin`): `Promise`<`void`\>
+**`see`** HMSVideoPlugin
+
+#### Parameters
+
+| Name     | Type                                                                |
+| :------- | :------------------------------------------------------------------ |
+| `plugin` | [`HMSVideoPlugin`](/v2/api-reference/web/interfaces/HMSVideoPlugin) |
+
+#### Returns
+
+`Promise`<`void`\>
+
+---
+
+### addSink
+
+▸ **addSink**(`videoElement`): `void`
+
+#### Parameters
+
+| Name           | Type               |
+| :------------- | :----------------- |
+| `videoElement` | `HTMLVideoElement` |
+
+#### Returns
+
+`void`
+
+#### Overrides
+
+---
+
+### getMediaTrackSettings
+
+▸ **getMediaTrackSettings**(): `MediaTrackSettings`
+
+#### Returns
+
+`MediaTrackSettings`
+
+#### Inherited from
+
+---
+
+### getPlugins
+
+▸ **getPlugins**(): `string`[]
+**`see`** HMSVideoPlugin
+
+#### Returns
+
+`string`[]
+
+---
+
+### hasSinks
+
+▸ **hasSinks**(): `boolean`
+
+#### Returns
+
+`boolean`
+
+#### Inherited from
+
+---
+
+### removePlugin
+
+▸ **removePlugin**(`plugin`): `Promise`<`void`\>
+**`see`** HMSVideoPlugin
+
+#### Parameters
+
+| Name     | Type                                                                |
+| :------- | :------------------------------------------------------------------ |
+| `plugin` | [`HMSVideoPlugin`](/v2/api-reference/web/interfaces/HMSVideoPlugin) |
+
+#### Returns
+
+`Promise`<`void`\>
+
+---
+
+### removeSink
+
+▸ **removeSink**(`videoElement`): `void`
+removes the track from the passed in video element
+
+#### Parameters
+
+| Name           | Type               |
+| :------------- | :----------------- |
+| `videoElement` | `HTMLVideoElement` |
+
+#### Returns
+
+`void`
+
+#### Inherited from
+
+---
+
+### setEnabled
+
+▸ **setEnabled**(`value`): `Promise`<`void`\>
+use this function to set the enabled state of a track. If true the track will be unmuted and muted otherwise.
+
+#### Parameters
+
+| Name    | Type      |
+| :------ | :-------- |
+| `value` | `boolean` |
+
+#### Returns
+
+`Promise`<`void`\>
+
+#### Overrides
+
+---
+
+### setSettings
+
+▸ **setSettings**(`settings`): `Promise`<`void`\>
+This function can be used to set media track settings. Frequent options -
+deviceID: can be used to change to different input source
+width, height - can be used to change capture dimensions
+maxFramerate - can be used to control the capture framerate
+
+#### Parameters
+
+| Name       | Type                                                                           |
+| :--------- | :----------------------------------------------------------------------------- |
+| `settings` | [`HMSVideoTrackSettings`](/v2/api-reference/web/classes/HMSVideoTrackSettings) |
+
+#### Returns
+
+`Promise`<`void`\>
+ses/HMSVideoTrackSettings) |
+
+#### Returns
+
+`Promise`<`void`\>

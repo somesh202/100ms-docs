@@ -1,0 +1,169 @@
+---
+title: HMSRemoteAudioTrack
+nav: 7
+---
+
+Tracks
+
+## Hierarchy
+
+- [`HMSAudioTrack`](/v2/api-reference/web/classes/HMSAudioTrack)
+  ↳ **`HMSRemoteAudioTrack`**
+
+## Constructors
+
+### constructor
+
+• **new HMSRemoteAudioTrack**(`stream`, `track`, `source?`)
+
+#### Parameters
+
+| Name      | Type               |
+| :-------- | :----------------- |
+| `stream`  | `default`          |
+| `track`   | `MediaStreamTrack` |
+| `source?` | `string`           |
+
+#### Inherited from
+
+## Properties
+
+### source
+
+#### Inherited from
+
+---
+
+### type
+
+• `Readonly` **type**: [`HMSTrackType`](/v2/api-reference/web/enums/HMSTrackType)
+
+#### Inherited from
+
+## Accessors
+
+### enabled
+
+• `get` **enabled**(): `boolean`
+
+#### Returns
+
+`boolean`
+
+---
+
+### trackId
+
+• `get` **trackId**(): `string`
+
+#### Returns
+
+`string`
+
+## Methods
+
+### getMediaTrackSettings
+
+▸ **getMediaTrackSettings**(): `MediaTrackSettings`
+
+#### Returns
+
+`MediaTrackSettings`
+
+#### Inherited from
+
+---
+
+### getOutputDevice
+
+▸ **getOutputDevice**(): `undefined` \| `MediaDeviceInfo`
+
+#### Returns
+
+`undefined` \| `MediaDeviceInfo`
+
+#### Inherited from
+
+---
+
+### getVolume
+
+▸ **getVolume**(): `null` \| `number`
+
+#### Returns
+
+`null` \| `number`
+
+#### Inherited from
+
+---
+
+### setAudioElement
+
+▸ **setAudioElement**(`element`): `void`
+
+#### Parameters
+
+| Name      | Type                         |
+| :-------- | :--------------------------- |
+| `element` | `null` \| `HTMLAudioElement` |
+
+#### Returns
+
+`void`
+
+#### Inherited from
+
+---
+
+### setEnabled
+
+▸ **setEnabled**(`value`): `Promise`<`void`\>
+
+#### Parameters
+
+| Name    | Type      |
+| :------ | :-------- |
+| `value` | `boolean` |
+
+#### Returns
+
+`Promise`<`void`\>
+
+#### Overrides
+
+---
+
+### setOutputDevice
+
+▸ **setOutputDevice**(`device`): `Promise`<`void`\>
+
+#### Parameters
+
+| Name     | Type              |
+| :------- | :---------------- |
+| `device` | `MediaDeviceInfo` |
+
+#### Returns
+
+`Promise`<`void`\>
+
+#### Inherited from
+
+---
+
+### setVolume
+
+▸ **setVolume**(`value`): `void`
+
+#### Parameters
+
+| Name    | Type     |
+| :------ | :------- |
+| `value` | `number` |
+
+#### Returns
+
+`void`
+
+#### Inherited from

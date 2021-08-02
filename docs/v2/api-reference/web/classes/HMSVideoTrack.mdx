@@ -1,0 +1,139 @@
+---
+title: HMSVideoTrack
+nav: 14
+---
+
+Tracks
+
+## Hierarchy
+
+- [`HMSTrack`](/v2/api-reference/web/classes/HMSTrack)
+  ↳ **`HMSVideoTrack`**
+  ↳↳ [`HMSLocalVideoTrack`](/v2/api-reference/web/classes/HMSLocalVideoTrack)
+  ↳↳ [`HMSRemoteVideoTrack`](/v2/api-reference/web/classes/HMSRemoteVideoTrack)
+
+## Constructors
+
+### constructor
+
+• **new HMSVideoTrack**(`stream`, `track`, `source?`)
+
+#### Parameters
+
+| Name      | Type               |
+| :-------- | :----------------- |
+| `stream`  | `default`          |
+| `track`   | `MediaStreamTrack` |
+| `source?` | `string`           |
+
+#### Overrides
+
+HMSTrack.constructor
+
+## Properties
+
+### source
+
+#### Inherited from
+
+---
+
+### type
+
+• `Readonly` **type**: [`HMSTrackType`](/v2/api-reference/web/enums/HMSTrackType)
+
+#### Overrides
+
+## Accessors
+
+### enabled
+
+• `get` **enabled**(): `boolean`
+
+#### Returns
+
+`boolean`
+
+---
+
+### trackId
+
+• `get` **trackId**(): `string`
+
+#### Returns
+
+`string`
+
+## Methods
+
+### addSink
+
+▸ **addSink**(`videoElement`): `void`
+attaches the track to the passed in video element
+
+#### Parameters
+
+| Name           | Type               |
+| :------------- | :----------------- |
+| `videoElement` | `HTMLVideoElement` |
+
+#### Returns
+
+`void`
+
+---
+
+### getMediaTrackSettings
+
+▸ **getMediaTrackSettings**(): `MediaTrackSettings`
+
+#### Returns
+
+`MediaTrackSettings`
+
+#### Inherited from
+
+---
+
+### hasSinks
+
+▸ **hasSinks**(): `boolean`
+
+#### Returns
+
+`boolean`
+
+---
+
+### removeSink
+
+▸ **removeSink**(`videoElement`): `void`
+removes the track from the passed in video element
+
+#### Parameters
+
+| Name           | Type               |
+| :------------- | :----------------- |
+| `videoElement` | `HTMLVideoElement` |
+
+#### Returns
+
+`void`
+
+---
+
+### setEnabled
+
+▸ **setEnabled**(`value`): `Promise`<`void`\>
+
+#### Parameters
+
+| Name    | Type      |
+| :------ | :-------- |
+| `value` | `boolean` |
+
+#### Returns
+
+`Promise`<`void`\>
+
+#### Inherited from

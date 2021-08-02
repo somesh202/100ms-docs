@@ -1,0 +1,188 @@
+---
+title: HMSRemoteVideoTrack
+nav: 9
+---
+
+Tracks
+
+## Hierarchy
+
+- [`HMSVideoTrack`](/v2/api-reference/web/classes/HMSVideoTrack)
+  ↳ **`HMSRemoteVideoTrack`**
+
+## Constructors
+
+### constructor
+
+• **new HMSRemoteVideoTrack**(`stream`, `track`, `source?`)
+
+#### Parameters
+
+| Name      | Type               |
+| :-------- | :----------------- |
+| `stream`  | `default`          |
+| `track`   | `MediaStreamTrack` |
+| `source?` | `string`           |
+
+#### Inherited from
+
+## Properties
+
+### source
+
+#### Inherited from
+
+---
+
+### type
+
+• `Readonly` **type**: [`HMSTrackType`](/v2/api-reference/web/enums/HMSTrackType)
+
+#### Inherited from
+
+## Accessors
+
+### degraded
+
+• `get` **degraded**(): `boolean`
+
+#### Returns
+
+`boolean`
+
+---
+
+### enabled
+
+• `get` **enabled**(): `boolean`
+
+#### Returns
+
+`boolean`
+
+---
+
+### trackId
+
+• `get` **trackId**(): `string`
+
+#### Returns
+
+`string`
+
+## Methods
+
+### addSink
+
+▸ **addSink**(`videoElement`): `void`
+attaches the track to the passed in video element
+
+#### Parameters
+
+| Name           | Type               |
+| :------------- | :----------------- |
+| `videoElement` | `HTMLVideoElement` |
+
+#### Returns
+
+`void`
+
+#### Overrides
+
+---
+
+### getMediaTrackSettings
+
+▸ **getMediaTrackSettings**(): `MediaTrackSettings`
+
+#### Returns
+
+`MediaTrackSettings`
+
+#### Inherited from
+
+---
+
+### getSimulcastDefinitions
+
+▸ **getSimulcastDefinitions**(): `SimulcastLayerDefinition`[]
+Method to get available simulcast definitions for the track
+
+#### Returns
+
+`SimulcastLayerDefinition`[]
+
+---
+
+### getSimulcastLayer
+
+▸ **getSimulcastLayer**(): [`HMSSimulcastLayer`](/v2/api-reference/web/enums/HMSSimulcastLayer)
+
+#### Returns
+
+[`HMSSimulcastLayer`](/v2/api-reference/web/enums/HMSSimulcastLayer)
+
+---
+
+### hasSinks
+
+▸ **hasSinks**(): `boolean`
+
+#### Returns
+
+`boolean`
+
+#### Inherited from
+
+---
+
+### preferLayer
+
+▸ **preferLayer**(`layer`): `void`
+
+#### Parameters
+
+| Name    | Type                                                                 |
+| :------ | :------------------------------------------------------------------- |
+| `layer` | [`HMSSimulcastLayer`](/v2/api-reference/web/enums/HMSSimulcastLayer) |
+
+#### Returns
+
+`void`
+
+---
+
+### removeSink
+
+▸ **removeSink**(`videoElement`): `void`
+removes the track from the passed in video element
+
+#### Parameters
+
+| Name           | Type               |
+| :------------- | :----------------- |
+| `videoElement` | `HTMLVideoElement` |
+
+#### Returns
+
+`void`
+
+#### Overrides
+
+---
+
+### setEnabled
+
+▸ **setEnabled**(`value`): `Promise`<`void`\>
+
+#### Parameters
+
+| Name    | Type      |
+| :------ | :-------- |
+| `value` | `boolean` |
+
+#### Returns
+
+`Promise`<`void`\>
+
+#### Overrides

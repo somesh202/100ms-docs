@@ -1,0 +1,313 @@
+---
+title: HMSSdk
+nav: 10
+---
+
+## Implements
+
+- `HMSInterface`
+
+## Constructors
+
+### constructor
+
+• **new HMSSdk**()
+
+## Methods
+
+### acceptChangeRole
+
+▸ **acceptChangeRole**(`request`): `void`
+
+#### Parameters
+
+| Name      | Type                                                                            |
+| :-------- | :------------------------------------------------------------------------------ |
+| `request` | [`HMSRoleChangeRequest`](/v2/api-reference/web/interfaces/HMSRoleChangeRequest) |
+
+#### Returns
+
+`void`
+
+---
+
+### addAudioListener
+
+▸ **addAudioListener**(`audioListener`): `void`
+
+#### Parameters
+
+| Name            | Type                                                                    |
+| :-------------- | :---------------------------------------------------------------------- |
+| `audioListener` | [`HMSAudioListener`](/v2/api-reference/web/interfaces/HMSAudioListener) |
+
+#### Returns
+
+`void`
+
+---
+
+### addTrack
+
+▸ **addTrack**(`track`, `source?`): `Promise`<`void`\>
+
+#### Parameters
+
+| Name    | Type               | Default value |
+| :------ | :----------------- | :------------ |
+| `track` | `MediaStreamTrack` | `undefined`   |
+
+#### Returns
+
+`Promise`<`void`\>
+
+#### Implementation of
+
+HMSInterface.addTrack
+
+---
+
+### changeRole
+
+▸ **changeRole**(`forPeer`, `toRole`, `force?`): `void`
+
+#### Parameters
+
+| Name      | Type                                                           | Default value |
+| :-------- | :------------------------------------------------------------- | :------------ |
+| `forPeer` | [`HMSRemotePeer`](/v2/api-reference/web/classes/HMSRemotePeer) | `undefined`   |
+| `toRole`  | `string`                                                       | `undefined`   |
+| `force`   | `boolean`                                                      | `false`       |
+
+#### Returns
+
+`void`
+
+---
+
+### getAudioOutput
+
+▸ **getAudioOutput**(): `AudioOutputManager`
+
+#### Returns
+
+`AudioOutputManager`
+
+---
+
+### getLocalPeer
+
+▸ **getLocalPeer**(): `undefined` \| [`HMSLocalPeer`](/v2/api-reference/web/classes/HMSLocalPeer)
+
+#### Returns
+
+`undefined` \| [`HMSLocalPeer`](/v2/api-reference/web/classes/HMSLocalPeer)
+
+#### Implementation of
+
+HMSInterface.getLocalPeer
+
+---
+
+### getPeers
+
+▸ **getPeers**(): [`HMSPeer`](/v2/api-reference/web/classes/HMSPeer)[]
+
+#### Returns
+
+[`HMSPeer`](/v2/api-reference/web/classes/HMSPeer)[]
+
+#### Implementation of
+
+HMSInterface.getPeers
+
+---
+
+### getRoles
+
+▸ **getRoles**(): [`HMSRole`](/v2/api-reference/web/interfaces/HMSRole)[]
+
+#### Returns
+
+[`HMSRole`](/v2/api-reference/web/interfaces/HMSRole)[]
+
+#### Implementation of
+
+HMSInterface.getRoles
+
+---
+
+### join
+
+▸ **join**(`config`, `listener`): `void`
+
+#### Parameters
+
+| Name       | Type                                                                      |
+| :--------- | :------------------------------------------------------------------------ |
+| `config`   | [`HMSConfig`](/v2/api-reference/web/interfaces/HMSConfig)                 |
+| `listener` | [`HMSUpdateListener`](/v2/api-reference/web/interfaces/HMSUpdateListener) |
+
+#### Returns
+
+`void`
+
+#### Implementation of
+
+HMSInterface.join
+
+---
+
+### leave
+
+▸ **leave**(): `Promise`<`void`\>
+
+#### Returns
+
+`Promise`<`void`\>
+
+#### Implementation of
+
+HMSInterface.leave
+
+---
+
+### preview
+
+▸ **preview**(`config`, `listener`): `Promise`<`void`\>
+
+#### Parameters
+
+| Name       | Type                                                                        |
+| :--------- | :-------------------------------------------------------------------------- |
+| `config`   | [`HMSConfig`](/v2/api-reference/web/interfaces/HMSConfig)                   |
+| `listener` | [`HMSPreviewListener`](/v2/api-reference/web/interfaces/HMSPreviewListener) |
+
+#### Returns
+
+`Promise`<`void`\>
+
+---
+
+### removeTrack
+
+▸ **removeTrack**(`trackId`): `Promise`<`void`\>
+
+#### Parameters
+
+| Name      | Type     |
+| :-------- | :------- |
+| `trackId` | `string` |
+
+#### Returns
+
+`Promise`<`void`\>
+
+#### Implementation of
+
+HMSInterface.removeTrack
+
+---
+
+### sendMessage
+
+▸ **sendMessage**(`type`, `message`, `receiver?`): `default`
+
+#### Parameters
+
+| Name        | Type     |
+| :---------- | :------- |
+| `type`      | `string` |
+| `message`   | `string` |
+| `receiver?` | `string` |
+
+#### Returns
+
+`default`
+
+#### Implementation of
+
+HMSInterface.sendMessage
+
+---
+
+### setAnalyticsLevel
+
+▸ **setAnalyticsLevel**(`level`): `void`
+
+#### Parameters
+
+| Name    | Type                |
+| :------ | :------------------ |
+| `level` | `HMSAnalyticsLevel` |
+
+#### Returns
+
+`void`
+
+#### Implementation of
+
+HMSInterface.setAnalyticsLevel
+
+---
+
+### setLogLevel
+
+▸ **setLogLevel**(`level`): `void`
+
+#### Parameters
+
+| Name    | Type                                                     |
+| :------ | :------------------------------------------------------- |
+| `level` | [`HMSLogLevel`](/v2/api-reference/web/enums/HMSLogLevel) |
+
+#### Returns
+
+`void`
+
+#### Implementation of
+
+HMSInterface.setLogLevel
+
+---
+
+### startScreenShare
+
+▸ **startScreenShare**(`onStop`): `Promise`<`void`\>
+
+#### Parameters
+
+| Name     | Type         |
+| :------- | :----------- |
+| `onStop` | () => `void` |
+
+#### Returns
+
+`Promise`<`void`\>
+
+#### Implementation of
+
+HMSInterface.startScreenShare
+
+---
+
+### stopScreenShare
+
+▸ **stopScreenShare**(): `Promise`<`void`\>
+
+#### Returns
+
+`Promise`<`void`\>
+
+#### Implementation of
+
+HMSInterface.stopScreenShare
+romise`<`void`\>
+
+#### Returns
+
+`Promise`<`void`\>
+
+#### Implementation of
+
+HMSInterface.stopScreenShare

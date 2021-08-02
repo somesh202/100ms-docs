@@ -1,6 +1,128 @@
 ---
-title: WEB
+title: Web
 nav: 9.6
 ---
 
-Coming Soon
+## Enumerations
+
+-   [HMSLogLevel](/v2/api-reference/web/enums/HMSLogLevel)
+-   [HMSPeerUpdate](/v2/api-reference/web/enums/HMSPeerUpdate)
+-   [HMSRoomType](/v2/api-reference/web/enums/HMSRoomType)
+-   [HMSRoomUpdate](/v2/api-reference/web/enums/HMSRoomUpdate)
+-   [HMSSimulcastLayer](/v2/api-reference/web/enums/HMSSimulcastLayer)
+-   [HMSTrackType](/v2/api-reference/web/enums/HMSTrackType)
+-   [HMSTrackUpdate](/v2/api-reference/web/enums/HMSTrackUpdate)
+-   [HMSVideoPluginType](/v2/api-reference/web/enums/HMSVideoPluginType)
+
+## Classes
+
+-   [HMSAudioTrack](/v2/api-reference/web/classes/HMSAudioTrack)
+-   [HMSAudioTrackSettings](/v2/api-reference/web/classes/HMSAudioTrackSettings)
+-   [HMSAudioTrackSettingsBuilder](/v2/api-reference/web/classes/HMSAudioTrackSettingsBuilder)
+-   [HMSLocalAudioTrack](/v2/api-reference/web/classes/HMSLocalAudioTrack)
+-   [HMSLocalPeer](/v2/api-reference/web/classes/HMSLocalPeer)
+-   [HMSLocalVideoTrack](/v2/api-reference/web/classes/HMSLocalVideoTrack)
+-   [HMSPeer](/v2/api-reference/web/classes/HMSPeer)
+-   [HMSRemoteAudioTrack](/v2/api-reference/web/classes/HMSRemoteAudioTrack)
+-   [HMSRemotePeer](/v2/api-reference/web/classes/HMSRemotePeer)
+-   [HMSRemoteVideoTrack](/v2/api-reference/web/classes/HMSRemoteVideoTrack)
+-   [HMSSdk](/v2/api-reference/web/classes/HMSSdk)
+-   [HMSTrack](/v2/api-reference/web/classes/HMSTrack)
+-   [HMSTrackSettings](/v2/api-reference/web/classes/HMSTrackSettings)
+-   [HMSTrackSettingsBuilder](/v2/api-reference/web/classes/HMSTrackSettingsBuilder)
+-   [HMSVideoTrack](/v2/api-reference/web/classes/HMSVideoTrack)
+-   [HMSVideoTrackSettings](/v2/api-reference/web/classes/HMSVideoTrackSettings)
+-   [HMSVideoTrackSettingsBuilder](/v2/api-reference/web/classes/HMSVideoTrackSettingsBuilder)
+
+## Interfaces
+
+-   [HMSAudioListener](/v2/api-reference/web/interfaces/HMSAudioListener)
+-   [HMSConfig](/v2/api-reference/web/interfaces/HMSConfig)
+-   [HMSException](/v2/api-reference/web/interfaces/HMSException)
+-   [HMSInitialSettings](/v2/api-reference/web/interfaces/HMSInitialSettings)
+-   [HMSMessage](/v2/api-reference/web/interfaces/HMSMessage)
+-   [HMSPreviewListener](/v2/api-reference/web/interfaces/HMSPreviewListener)
+-   [HMSRole](/v2/api-reference/web/interfaces/HMSRole)
+-   [HMSRoleChangeRequest](/v2/api-reference/web/interfaces/HMSRoleChangeRequest)
+-   [HMSRoom](/v2/api-reference/web/interfaces/HMSRoom)
+-   [HMSSpeaker](/v2/api-reference/web/interfaces/HMSSpeaker)
+-   [HMSUpdateListener](/v2/api-reference/web/interfaces/HMSUpdateListener)
+-   [HMSVideoPlugin](/v2/api-reference/web/interfaces/HMSVideoPlugin)
+
+## Type aliases
+
+### DeviceMap
+
+Ƭ **DeviceMap**: `Omit`<`HMSDeviceManager`, `"outputDevice"`\>
+Interfaces
+
+---
+
+### HMSTrackSource
+
+Ƭ **HMSTrackSource**: `"regular"` \| `"screen"` \| `"plugin"`
+Tracks
+
+## Variables
+
+### isSupported
+
+• `Const` **isSupported**: `boolean`
+
+---
+
+### parsedUserAgent
+
+• `Const` **parsedUserAgent**: `UAParserInstance`
+
+## Functions
+
+### getLocalDevices
+
+▸ **getLocalDevices**(): `Promise`<`MediaDeviceGroups`\>
+
+#### Returns
+
+`Promise`<`MediaDeviceGroups`\>
+
+---
+
+### getLocalScreen
+
+▸ **getLocalScreen**(`constraints`): `Promise`<`MediaStream`\>
+
+#### Parameters
+
+| Name          | Type                                  |
+| :------------ | :------------------------------------ |
+| `constraints` | `MediaStreamConstraints`[``"video"``] |
+
+#### Returns
+
+`Promise`<`MediaStream`\>
+
+---
+
+### getLocalStream
+
+▸ **getLocalStream**(`constraints`): `Promise`<`MediaStream`\>
+
+#### Parameters
+
+| Name          | Type                     |
+| :------------ | :----------------------- |
+| `constraints` | `MediaStreamConstraints` |
+
+#### Returns
+
+`Promise`<`MediaStream`\>
+
+---
+
+### validateDeviceAV
+
+▸ **validateDeviceAV**(): `Promise`<`boolean`\>
+
+#### Returns
+
+`Promise`<`boolean`\>

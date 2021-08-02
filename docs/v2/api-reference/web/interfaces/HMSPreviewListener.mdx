@@ -1,0 +1,63 @@
+---
+title: HMSPreviewListener
+nav: 30
+---
+
+Interfaces
+
+## Hierarchy
+
+- `DeviceChangeListener`
+  ↳ **`HMSPreviewListener`**
+
+## Methods
+
+### onDeviceChange
+
+▸ **onDeviceChange**(`deviceMap`): `void`
+
+#### Parameters
+
+| Name | Type |
+| :--- | :--- |
+
+#### Returns
+
+`void`
+
+#### Inherited from
+
+DeviceChangeListener.onDeviceChange
+
+---
+
+### onError
+
+▸ **onError**(`exception`): `void`
+
+#### Parameters
+
+| Name        | Type                                                            |
+| :---------- | :-------------------------------------------------------------- |
+| `exception` | [`HMSException`](/v2/api-reference/web/interfaces/HMSException) |
+
+#### Returns
+
+`void`
+
+---
+
+### onPreview
+
+▸ **onPreview**(`room`, `localTracks`): `void`
+
+#### Parameters
+
+| Name          | Type                                                   |
+| :------------ | :----------------------------------------------------- |
+| `room`        | [`HMSRoom`](/v2/api-reference/web/interfaces/HMSRoom)  |
+| `localTracks` | [`HMSTrack`](/v2/api-reference/web/classes/HMSTrack)[] |
+
+#### Returns
+
+`void`

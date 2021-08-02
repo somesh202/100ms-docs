@@ -1,0 +1,68 @@
+---
+title: HMSTrack
+nav: 11
+---
+
+Tracks
+
+## Hierarchy
+
+- **`HMSTrack`**
+  ↳ [`HMSAudioTrack`](/v2/api-reference/web/classes/HMSAudioTrack)
+  ↳ [`HMSVideoTrack`](/v2/api-reference/web/classes/HMSVideoTrack)
+
+## Properties
+
+### source
+
+---
+
+### type
+
+• `Readonly` `Abstract` **type**: [`HMSTrackType`](/v2/api-reference/web/enums/HMSTrackType)
+
+## Accessors
+
+### enabled
+
+• `get` **enabled**(): `boolean`
+
+#### Returns
+
+`boolean`
+
+---
+
+### trackId
+
+• `get` **trackId**(): `string`
+
+#### Returns
+
+`string`
+
+## Methods
+
+### getMediaTrackSettings
+
+▸ **getMediaTrackSettings**(): `MediaTrackSettings`
+
+#### Returns
+
+`MediaTrackSettings`
+
+---
+
+### setEnabled
+
+▸ **setEnabled**(`value`): `Promise`<`void`\>
+
+#### Parameters
+
+| Name    | Type      |
+| :------ | :-------- |
+| `value` | `boolean` |
+
+#### Returns
+
+`Promise`<`void`\>

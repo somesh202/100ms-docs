@@ -1,0 +1,224 @@
+---
+title: HMSLocalAudioTrack
+nav: 3
+---
+
+Tracks
+
+## Hierarchy
+
+- [`HMSAudioTrack`](/v2/api-reference/web/classes/HMSAudioTrack)
+  ↳ **`HMSLocalAudioTrack`**
+
+## Constructors
+
+### constructor
+
+• **new HMSLocalAudioTrack**(`stream`, `track`, `source`, `settings?`)
+
+#### Parameters
+
+| Name       | Type                                                                           |
+| :--------- | :----------------------------------------------------------------------------- |
+| `stream`   | `default`                                                                      |
+| `track`    | `MediaStreamTrack`                                                             |
+| `source`   | `string`                                                                       |
+| `settings` | [`HMSAudioTrackSettings`](/v2/api-reference/web/classes/HMSAudioTrackSettings) |
+
+#### Overrides
+
+## Properties
+
+### audioLevelMonitor
+
+• `Optional` **audioLevelMonitor**: `TrackAudioLevelMonitor`
+
+---
+
+### settings
+
+• **settings**: [`HMSAudioTrackSettings`](/v2/api-reference/web/classes/HMSAudioTrackSettings)
+
+---
+
+### source
+
+#### Inherited from
+
+---
+
+### type
+
+• `Readonly` **type**: [`HMSTrackType`](/v2/api-reference/web/enums/HMSTrackType)
+
+#### Inherited from
+
+## Accessors
+
+### enabled
+
+• `get` **enabled**(): `boolean`
+
+#### Returns
+
+`boolean`
+
+---
+
+### trackId
+
+• `get` **trackId**(): `string`
+
+#### Returns
+
+`string`
+
+## Methods
+
+### destroyAudioLevelMonitor
+
+▸ **destroyAudioLevelMonitor**(): `void`
+
+#### Returns
+
+`void`
+
+---
+
+### getMediaTrackSettings
+
+▸ **getMediaTrackSettings**(): `MediaTrackSettings`
+
+#### Returns
+
+`MediaTrackSettings`
+
+#### Inherited from
+
+---
+
+### getOutputDevice
+
+▸ **getOutputDevice**(): `undefined` \| `MediaDeviceInfo`
+
+#### Returns
+
+`undefined` \| `MediaDeviceInfo`
+
+#### Inherited from
+
+---
+
+### getVolume
+
+▸ **getVolume**(): `null` \| `number`
+
+#### Returns
+
+`null` \| `number`
+
+#### Inherited from
+
+---
+
+### initAudioLevelMonitor
+
+▸ **initAudioLevelMonitor**(`listeners?`): `void`
+
+#### Parameters
+
+| Name         | Type                                                        |
+| :----------- | :---------------------------------------------------------- |
+| `listeners?` | `EventReceiver`<`undefined` \| `ITrackAudioLevelUpdate`\>[] |
+
+#### Returns
+
+`void`
+
+---
+
+### setAudioElement
+
+▸ **setAudioElement**(`element`): `void`
+
+#### Parameters
+
+| Name      | Type                         |
+| :-------- | :--------------------------- |
+| `element` | `null` \| `HTMLAudioElement` |
+
+#### Returns
+
+`void`
+
+#### Inherited from
+
+---
+
+### setEnabled
+
+▸ **setEnabled**(`value`): `Promise`<`void`\>
+
+#### Parameters
+
+| Name    | Type      |
+| :------ | :-------- |
+| `value` | `boolean` |
+
+#### Returns
+
+`Promise`<`void`\>
+
+#### Overrides
+
+---
+
+### setOutputDevice
+
+▸ **setOutputDevice**(`device`): `Promise`<`void`\>
+
+#### Parameters
+
+| Name     | Type              |
+| :------- | :---------------- |
+| `device` | `MediaDeviceInfo` |
+
+#### Returns
+
+`Promise`<`void`\>
+
+#### Inherited from
+
+---
+
+### setSettings
+
+▸ **setSettings**(`settings`): `Promise`<`void`\>
+
+#### Parameters
+
+| Name       | Type                                                                           |
+| :--------- | :----------------------------------------------------------------------------- |
+| `settings` | [`HMSAudioTrackSettings`](/v2/api-reference/web/classes/HMSAudioTrackSettings) |
+
+#### Returns
+
+`Promise`<`void`\>
+
+---
+
+### setVolume
+
+▸ **setVolume**(`value`): `void`
+
+#### Parameters
+
+| Name    | Type     |
+| :------ | :------- |
+| `value` | `number` |
+
+#### Returns
+
+`void`
+
+#### Inherited from
