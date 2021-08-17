@@ -19,7 +19,9 @@ Here's how to check whether the local peer has the permission to end the room:
 
 ```kotlin
 fun isAllowedToRemovePeer(): Boolean {
-    return hmsSDK.getLocalPeer()?.hmsRole?.permission?.removeOthers == true
+    return hmsSDK.getLocalPeer()!!
+                .hmsRole.permission?
+                .removeOthers == true
 }
 ```
 
@@ -37,6 +39,7 @@ private boolean isAllowedToRemovePeer() {
 }
 ```
 </Tab>
+
 
 <Tab id='endroom-2'>
 
@@ -56,6 +59,8 @@ private boolean isAllowedToRemovePeer() {
 }
 ```
 </Tab>
+
+`hmsSdk.getLocalPeer()` will only return null if you're neither in a preview nor in a meeting. Since you likely won't need to check for permissions there assuming you won't get null is reasonable.
 
 ### Removing a peer
 
